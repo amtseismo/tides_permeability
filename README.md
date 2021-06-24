@@ -40,7 +40,7 @@ We now have the tidal timeseries, sampled at 2 minute intervals with no data gap
 
 The phases determined via each of these methods is shown in Figure 4 below.  A couple of points.  The phase angles do vary from method to method and their are outliers but they are usually consistent with each other and have the same general shape (i.e. temporal increases and decreases) as in Xue's Figure 3A.  However, these phase angles are larger than hers by about 5 degrees in the case of the cross-correlation based estimates.  Her phases vary mostly between 20 and 25 degrees whereas mine are mostly between 25 and 30.  I have tried exploring this and cannot reproduce her values exactly.  I did not do an MCMC inversion but she says this is equivalent to spectral division (which is faster) so it's hard to blame the difference on method.  The differences also could be due to the various decions made above on filter type (she does not say which type of filter she used), handling of data gaps, data sampling, etc.
 
-![Figure 4](wfsd_phase.png)
+![Figure 4](wfsd_phases.png)
 
 
 
