@@ -46,7 +46,7 @@ The phases determined via each of these methods is shown in Figure 4 below.  A c
 
 ### Step 4: Estimating amplitude
 
-For each of the windows described in the previous section we estimate the amplitude response in two ways.  First we simply take the ratio of the spectral amplitudes of the tidal dilatation to the water level at the period corresponding to the M2 tide (12.421).  Second, we shift the tidal timeseries by the lag such that it is aligned with the tidal dilataion.  We then take the median(abs(tidal dilatation)/abs(water level).  These estimates are shown in Figure 5 below and are generally larger than those of Xue et al. (2013).  Her values are between 6 and 7*10^-7/m whereas mine vary between 0.9 and 1.1*10^-7/m.  
+For each of the windows described in the previous section we estimate the amplitude response in two ways.  First we simply take the ratio of the spectral amplitudes of the tidal dilatation to the water level at the period corresponding to the M2 tide (12.421).  Second, we shift the tidal timeseries by the lag such that it is aligned with the tidal dilataion.  We then take the median(abs(tidal dilatation)/abs(water level).  These estimates are shown in Figure 5 below and are generally larger than those of Xue et al. (2013).  Her values are between 6 and 7\*10<sup>-7</sup>/m whereas mine vary between 0.9 and 1.1\*10<sup>-7</sup>/m.  
 
 ![Figure 5](wfsd_amps.png)
 
