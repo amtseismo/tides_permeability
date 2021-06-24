@@ -22,6 +22,6 @@ In order to run the scripts you will need Python and basic packages such as Nump
 
 ### Step 1: Calculate the tides for WFSD-1 
 
-Since WFSD-1 is far from the ocean I used only ertid (body load only) to calcuate the tides at the location listed in the paper (31.1°N, 103.7°E).  I calulated them for two years starting on 1/1/2010 with a sampling rate of two minutes.  This creates a file called xue_tides_2021 that has the north strain in column 1 and the east strain in column 2.  The times from SPOTL are in UTC--this will be important later.  To get the tidal dilatation we add the east and north strain and the units are in nanostrain.  The calculated dilatation is shown in Figure 1 below.
+Since WFSD-1 is far from the ocean I used only ertid (body load only) to calcuate the tides at the location listed in the paper (31.1°N, 103.7°E).  I calulated them for two years starting on 1/1/2010 with a sampling rate of two minutes using the script **for\_wenchuan.sh**.  This creates a file called xue_tides_2021 that has the north strain in column 1 and the east strain in column 2.  The times from SPOTL are in UTC--this will be important later.  To get the tidal dilatation we add the east and north strain and the units are in nanostrain.  The calculated dilatation is shown in Figure 1 below.
 
 ![Figure 1](wfsd_tides.png)
