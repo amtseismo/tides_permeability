@@ -28,7 +28,7 @@ Since WFSD-1 is far from the ocean I used only ertid (body load only) to calcuat
 
 ### Step 2: Pull water level data from Xue et al. (2013) supplementary material
 
-The file **waterlevel.csv** can be found in the supplement of the Xue paper.  The script **reproduce\_xue.py** reads in this file, converts the time stamps to the appropriate datetime format.  Since NaNs are present in the data, we first drop those, then we resample the data to 2 minute intervals.  This again introduces NaNs so we interpolate across no more than 2 consectutive NaN values.  If more consecutive NaNs are present we drop those values which creates a timeseries sampled every two minutes but with datagaps present.  You can see an example of the original and resampled timeseries in Figure 2 below.
+The file **waterlevel.csv** can be found in the supplement of the Xue paper.  The script **reproduce\_xue.py** reads in this file, converts the time stamps to the appropriate datetime format (making sure to correct Beijing time to UTC).  Since NaNs are present in the data, we first drop those, then we resample the data to 2 minute intervals.  This again introduces NaNs so we interpolate across no more than 2 consectutive NaN values.  If more consecutive NaNs are present we drop those values which creates a timeseries sampled every two minutes but with datagaps present.  You can see an example of the original and resampled timeseries in Figure 2 below.
 
 ![Figure 2](wfsd_water_level.png)
 
