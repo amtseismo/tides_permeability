@@ -50,3 +50,9 @@ For each of the windows described in the previous section we estimate the amplit
 
 ![Figure 5](wfsd_amps.png)
 
+### Step 5: Calculating storage coefficient, transmissivity, diffusivity and permeability
+
+The script **permeability\_calculation\_xue.py** calculates the various hydrologic properties.  They are defined and commented in the script.  As a check I opted to reproduce the first datapoint in her Figure 3 to see if I could obtain the corresponding values in Figure 4.  She measures a phase of 25.5° and an amplitude of 7\*10<sup>-7</sup>/m.  Using this, taking values of other constants from her paper, and solving the equations laid out in Hsieh et al. (1987) I obtained transmissivity, T=4.33e-6 m<sup>2</sup>/s, a storage coefficient of S=2.34e-4 (consistent with her Figure 4), permeability of 1.1e-15 m<sup>2</sup> (also consistent with her Figure 4).  The solution space and optimal solution is shown in Figure 6 below.
+
+![Figure 5](s_and_t.png)
+
