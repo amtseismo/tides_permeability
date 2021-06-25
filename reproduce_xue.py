@@ -26,7 +26,7 @@ df=pd.read_csv('/Users/amt/Documents/hawaii_permeability/waterlevel.csv',
 # read tides from ertid
 ertides=pd.read_csv('xue_tides_2021', names=['NN','EE'], delim_whitespace=True)
 ertides['datetime']=pd.date_range("2010-01-01", periods=len(ertides), freq="2T")
-ertides['dila']=-10**-9*(ertides['EE']+ertides['NN'])
+ertides['dila']=-10**-9*(ertides['EE']+ertides['NN'])*(1-2*0.25)/(1-0.25) # areal strain --> dilatation
 
 # # plot the tides
 # fig1 = plt.figure(constrained_layout=True,figsize=(12,5))
